@@ -1,0 +1,77 @@
+@CHARSET "UTF-8";
+
+body {
+	height:100vh;
+	box-sizing:border-box;
+	text-align:center;
+	margin:0;
+	padding:0;
+	background:whitesmoke;
+	font-size:5vw;
+	color:white;
+}
+
+#layout {
+	display:flex;
+	flex-wrap:wrap;
+	height:70vh;
+	width:75vw;
+	background-color:turquoise;
+	margin:auto;
+	border-radius:2vh;
+}
+
+.clear {
+	height:8vh;
+	width:9vw;
+	background-color:red;
+	border-radius:2vh;
+	line-height:8vh;
+	border:1vw solid black;
+	
+}
+
+.input {
+	height:8vh;
+	width:40vw;
+	background-color:white;
+	border-radius:2vh;
+	border:1vw solid black;
+	overflow:hidden;
+	line-height:8vh;
+	color:black;
+}
+.clear, .input{
+	position:relative;
+}
+.keys {
+	display:flex;
+	flex-wrap:wrap;
+	border-radius:2vh;
+}
+.keys div {
+	
+	height:9vh;
+	width:14vw;
+	border-radius:2vh;
+	line-height:9vh;
+	border:1vw solid black;
+	margin-left:2vw;
+	background-color:gray;
+}
+
+.keys #math{
+	background:black;
+	
+}
+.keys #equals {
+	background:red;
+}
+.top {
+	position:relative;
+	display:flex;
+	justify-content:space-around;
+	width:75vw;
+	height:10vh;
+	top:3vh;
+}

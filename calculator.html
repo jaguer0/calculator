@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="calculator1.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script>
+	$(document).ready(function() {
+		$(".keys > div ").click(function() {
+			var key = $(this).text();
+			if (key == "x") {
+				$(".input").append("*");
+
+			} else if (key == "C") {
+				$(".input").empty();
+
+			} else if (key == "=") {
+				var value = $(".input").text();
+				try {
+					value = eval(value);
+					$(".input").append("=" + value);
+				}
+				catch (err) {
+					$(".input").append("ERROR")
+				}
+				
+			} else {
+				$(".input").append(key);
+			}
+		});
+		$(".clear").click(function() {
+			$(".input").empty();
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="layout">
+		<div class="top">
+			<div class="clear">C</div>
+			<div class="input"></div>
+		</div>
+		<div class="keys">
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div id="math">x</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div id="math">-</div>
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div id="math">+</div>
+			<div>0</div>
+			<div>.</div>
+			<div id="math">/</div>
+			<div id="equals">=</div>
+
+
+
+
+
+
+		</div>
+	</div>
+</body>
+</html>
