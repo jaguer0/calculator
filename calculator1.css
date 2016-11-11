@@ -6,7 +6,7 @@ body {
 	text-align:center;
 	margin:0;
 	padding:0;
-	background:whitesmoke;
+	background:black;
 	font-size:5vw;
 	color:white;
 }
@@ -19,6 +19,7 @@ body {
 	background-color:turquoise;
 	margin:auto;
 	border-radius:2vh;
+    margin-top: 5em;
 }
 
 .clear {
